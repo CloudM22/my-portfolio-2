@@ -9,15 +9,15 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "karthikeya@example.com",
-    href: "mailto:karthikeya@example.com",
+    value: "karthikmasapuram@gmail.com",
+    href: "mailto:karthikmasapuram@gmail.com",
     color: "from-red-500 to-orange-500",
   },
   {
     icon: Github,
     label: "GitHub",
-    value: "github.com/karthikeya",
-    href: "https://github.com/karthikeya",
+    value: "github.com/CloudM22",
+    href: "https://github.com/CloudM22",
     color: "from-gray-700 to-gray-900",
   },
   {
@@ -30,8 +30,8 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (234) 567-8900",
-    href: "tel:+12345678900",
+    value: "+91 (770) 240-2322",
+    href: "tel:+917702402322",
     color: "from-green-500 to-emerald-500",
   },
 ];
