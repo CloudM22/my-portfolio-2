@@ -23,8 +23,8 @@ const contactInfo = [
   {
     icon: Linkedin,
     label: "LinkedIn",
-    value: "linkedin.com/in/karthikeya",
-    href: "https://linkedin.com/in/karthikeya",
+    value: "linkedin.com/in/karthik-masapuram",
+    href: "https://www.linkedin.com/in/karthik-masapuram",
     color: "from-blue-500 to-blue-700",
   },
   {

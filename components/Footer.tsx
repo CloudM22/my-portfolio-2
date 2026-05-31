@@ -5,7 +5,7 @@ import { Heart, Github, Linkedin, Mail, ArrowUp } from "lucide-react";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/CloudM22", label: "GitHub" },
-  { icon: Linkedin, href: "https://linkedin.com/in/karthikeya", label: "LinkedIn" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/karthik-masapuram", label: "LinkedIn" },
   { icon: Mail, href: "mailto:karthikmasapuram@gmail.com", label: "Email" },
 ];
 
