@@ -12,6 +12,8 @@ const projects = [
       "Worked on UI updates and frontend pages using React.js, TypeScript, and Next.js. Implemented interactive dialogs and modals for enhanced user experience.",
     technologies: ["React.js", "TypeScript", "Next.js", "Tailwind CSS"],
     gradient: "from-cyan-500 to-teal-500",
+    github: "https://github.com/ramu-narasinga/thinkthroo",
+    demo: "https://thinkthroo.com",
   },
   {
     title: "Invoice App",
@@ -19,6 +21,8 @@ const projects = [
       "Built invoice features using React.js and TypeScript. Created complete invoice management system with PDF generation and email integration.",
     technologies: ["React.js", "TypeScript", "Tailwind CSS"],
     gradient: "from-emerald-500 to-teal-500",
+    github: "https://github.com/ramu-narasinga/invoice-app-1",
+    demo: "",
   },
 ];
 
@@ -27,10 +31,7 @@ export default function Projects() {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section
-      id="projects"
-      className="relative py-20 md:py-32 bg-slate-950"
-    >
+    <section id="projects" className="relative py-20 md:py-32 bg-slate-950">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           ref={ref}
@@ -69,9 +70,7 @@ export default function Projects() {
                     </h3>
                   </div>
 
-                  <p className="text-slate-400 mb-4">
-                    {project.description}
-                  </p>
+                  <p className="text-slate-400 mb-4">{project.description}</p>
 
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech, techIndex) => (
@@ -85,23 +84,33 @@ export default function Projects() {
                   </div>
 
                   <div className="flex gap-3">
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className="flex items-center gap-2 px-4 py-2 bg-slate-800 text-slate-300 rounded-lg font-medium text-sm hover:bg-slate-700 transition-colors"
-                    >
-                      <Github className="w-4 h-4" />
-                      Code
-                    </motion.button>
+                    {project.github && (
+                      <motion.a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className="flex items-center gap-2 px-4 py-2 bg-slate-800 text-slate-300 rounded-lg font-medium text-sm hover:bg-slate-700 transition-colors"
+                      >
+                        <Github className="w-4 h-4" />
+                        Code
+                      </motion.a>
+                    )}
 
-                    <motion.button
-                      whileHover={{ scale: 1.05 }}
-                      whileTap={{ scale: 0.95 }}
-                      className={`flex items-center gap-2 px-4 py-2 bg-gradient-to-r ${project.gradient} text-white rounded-lg font-medium text-sm hover:opacity-90 transition-opacity`}
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                      Live Demo
-                    </motion.button>
+                    {project.demo && (
+                      <motion.a
+                        href={project.demo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        className={`flex items-center gap-2 px-4 py-2 bg-gradient-to-r ${project.gradient} text-white rounded-lg font-medium text-sm hover:opacity-90 transition-opacity`}
+                      >
+                        <ExternalLink className="w-4 h-4" />
+                        Live Demo
+                      </motion.a>
+                    )}
                   </div>
                 </div>
               </div>

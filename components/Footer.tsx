@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 import { Heart, Github, Linkedin, Mail, ArrowUp } from "lucide-react";
 
 const socialLinks = [
-  { icon: Github, href: "https://github.com/karthikeya", label: "GitHub" },
+  { icon: Github, href: "https://github.com/CloudM22", label: "GitHub" },
   { icon: Linkedin, href: "https://linkedin.com/in/karthikeya", label: "LinkedIn" },
-  { icon: Mail, href: "mailto:karthikeya@example.com", label: "Email" },
+  { icon: Mail, href: "mailto:karthikmasapuram@gmail.com", label: "Email" },
 ];
 
 const navLinks = [
